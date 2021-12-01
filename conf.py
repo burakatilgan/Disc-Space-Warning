@@ -5,6 +5,7 @@ import psutil
 path = psutil.disk_usage("/")
 disk_name = socket.gethostname()
 local_ip = socket.gethostbyname(disk_name)
+
 # variables
 gb = 1073741824
 remaining_space_percentage = 100 - path.percent

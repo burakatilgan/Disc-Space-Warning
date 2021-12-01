@@ -8,6 +8,7 @@ print("Disk usage percentage: %", conf.path.percent)
 print("Disk usage:  ", conf.path.used, "gb")
 print("Disk Name:   ", conf.disk_name)
 print("Disk IP:     ", conf.local_ip)
+
 if 100 - conf.path.percent < conf.under_percentage:
     print("Remaining disc space %", conf.remaining_space_percentage)
     print(conf.message_low_disk_space)
